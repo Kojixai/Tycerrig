@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import Hero from "@/components/Hero";
 import BookingCTA from "@/components/BookingCTA";
 import CarthenDivider from "@/components/CarthenDivider";
@@ -30,6 +31,7 @@ export default function CaravanSite() {
         title="Y Safle"
         subtitle="The Site — five pitches, one stream, no crowds."
       />
+      <Breadcrumbs name="The Site" path="/caravan-site/" />
 
       <section className="mx-auto max-w-6xl px-6 py-16">
         <div className="measure">

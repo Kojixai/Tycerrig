@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import Hero from "@/components/Hero";
 import BookingCTA from "@/components/BookingCTA";
 import CarthenDivider from "@/components/CarthenDivider";
@@ -56,6 +57,7 @@ export default function FindUs() {
         title="Dod o Hyd i Ni"
         subtitle="Finding us — easier than you think: half a mile off the A494."
       />
+      <Breadcrumbs name="Find Us" path="/find-us/" />
 
       <section className="mx-auto max-w-6xl px-6 py-16">
         <div className="grid gap-12 lg:grid-cols-2">

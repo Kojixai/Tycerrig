@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import Hero from "@/components/Hero";
 import BookingCTA from "@/components/BookingCTA";
 import CarthenDivider from "@/components/CarthenDivider";
@@ -17,7 +18,9 @@ export default function Jets() {
         image={images.heroJets}
         title="Uwchben y Cwm"
         subtitle="Jets Over the Valley — some weekdays, the quietest valley in Wales gets very loud for about eight seconds."
+        position="72% 35%"
       />
+      <Breadcrumbs name="Jets Over the Valley" path="/jets/" />
 
       <section className="mx-auto max-w-4xl px-6 py-16">
         <div className="measure">

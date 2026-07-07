@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import Hero from "@/components/Hero";
 import BookingCTA from "@/components/BookingCTA";
 import { images } from "@/lib/images";
@@ -38,6 +39,7 @@ export default function History() {
         title="Hanes Dan Eich Traed"
         subtitle="History Beneath Your Feet — four thousand years in one small valley."
       />
+      <Breadcrumbs name="History Beneath Your Feet" path="/history/" />
 
       <div className="mx-auto max-w-4xl px-6 py-12">
         <Section cy="Yr hen bobl" en="the old ones">

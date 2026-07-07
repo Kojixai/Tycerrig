@@ -17,6 +17,7 @@ export const metadata: Metadata = {
     siteName: "Tŷ Cerrig",
     locale: "en_GB",
     type: "website",
+    images: [{ url: "/og.jpg", width: 1200, height: 630 }],
   },
 };
 
@@ -59,8 +60,14 @@ export default function RootLayout({
   return (
     <html lang="en-GB">
       <body>
+        <a
+          href="#main"
+          className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[60] focus:rounded focus:bg-moss focus:px-4 focus:py-2 focus:font-semibold focus:text-wool"
+        >
+          Skip to content
+        </a>
         <Header />
-        <main>{children}</main>
+        <main id="main">{children}</main>
         <Footer />
         <script
           type="application/ld+json"

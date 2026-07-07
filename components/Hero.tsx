@@ -11,6 +11,7 @@ export default function Hero({
   titleLang = "cy",
   subtitle,
   tall = false,
+  position,
   children,
 }: {
   image: ImageSlot;
@@ -18,6 +19,8 @@ export default function Hero({
   titleLang?: "cy" | "en";
   subtitle: string;
   tall?: boolean;
+  /** CSS object-position, for images whose subject sits off-centre. */
+  position?: string;
   children?: React.ReactNode;
 }) {
   return (
@@ -31,6 +34,7 @@ export default function Hero({
         height={image.height}
         fetchPriority="high"
         className="absolute inset-0 h-full w-full object-cover"
+        style={position ? { objectPosition: position } : undefined}
       />
       <div
         aria-hidden="true"

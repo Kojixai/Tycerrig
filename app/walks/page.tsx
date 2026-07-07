@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import Hero from "@/components/Hero";
 import BookingCTA from "@/components/BookingCTA";
 import WalkCard, { type Walk } from "@/components/WalkCard";
@@ -63,6 +64,7 @@ export default function Walks() {
         title="Teithiau Cerdded"
         subtitle="Walks — from a riverside stroll to the roof of southern Eryri (Snowdonia)."
       />
+      <Breadcrumbs name="Walks" path="/walks/" />
       <section className="mx-auto max-w-4xl px-6 py-14">
         {walks.map((walk) => (
           <WalkCard key={walk.name} walk={walk} />
