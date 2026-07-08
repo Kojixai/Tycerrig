@@ -89,15 +89,19 @@ export default function Home() {
 
       <CarthenDivider />
 
-      <section className="mx-auto max-w-6xl px-6 py-14">
-        <SectionHeading en="The essentials" cy="Yr hanfodion" />
-        <ul className="mt-8 grid gap-x-12 gap-y-6 sm:grid-cols-2">
+      <section className="mx-auto max-w-4xl px-6 py-14">
+        <SectionHeading en="The essentials" cy="Yr hanfodion" className="text-center" />
+        <ul className="mt-8 grid grid-cols-2 gap-4">
           {essentials.map((item) => (
-            <li key={item.title} className="flex gap-3.5">
-              <span aria-hidden="true" className="mt-2.5 h-2 w-2 shrink-0 rounded-full bg-bracken" />
-              <p className="leading-snug">
-                <strong className="font-semibold text-ink">{item.title}.</strong>{" "}
-                <span className="text-ink/75">{item.body}</span>
+            <li
+              key={item.title}
+              className="rounded-lg border border-ink/10 bg-wool-2 px-5 py-4"
+            >
+              <p className="font-display text-lg leading-tight text-ink">
+                {item.title}
+              </p>
+              <p className="mt-1.5 text-[0.85rem] leading-snug text-ink/75">
+                {item.body}
               </p>
             </li>
           ))}
@@ -107,7 +111,8 @@ export default function Home() {
       <BookingCTA inverted />
 
       <section className="mx-auto max-w-4xl px-6 py-16">
-        <div className="grid grid-cols-2 gap-4">
+        <SectionHeading en="Explore" cy="Crwydro" className="text-center" />
+        <div className="mt-8 grid grid-cols-2 gap-4">
           {teasers.map((t) => (
             <Link
               key={t.href}
