@@ -92,7 +92,7 @@ export default function Header() {
                   onClick={() => setOpen(false)}
                   className="group block py-3.5"
                 >
-                  <span className="font-display text-lg font-semibold text-ink group-hover:text-moss">
+                  <span className="font-display text-lg text-ink group-hover:text-moss">
                     {item.en}
                   </span>
                   <span

@@ -6,7 +6,7 @@ export default function Wordmark() {
     <Link href="/" className="flex flex-col leading-none">
       <span
         lang="cy"
-        className="font-display text-[1.35rem] font-semibold tracking-tight text-ink"
+        className="font-display text-[1.35rem] tracking-tight text-ink"
       >
         Tŷ Cerrig
       </span>

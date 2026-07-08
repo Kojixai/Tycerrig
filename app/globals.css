@@ -12,7 +12,7 @@
   --color-bracken-deep: #8c4a26;
   --color-river: #7a94a3; /* soft slate blue */
 
-  --font-display: "Fraunces Variable", "Source Serif 4", Georgia, serif;
+  --font-display: "Instrument Serif", Georgia, serif;
   --font-sans: "Figtree Variable", system-ui, sans-serif;
 }
 
@@ -28,12 +28,18 @@ body {
   text-rendering: optimizeLegibility;
 }
 
+/* Instrument Serif ships a single 400 weight — never synthesise bold. */
 h1,
 h2,
 h3 {
   font-family: var(--font-display);
-  font-variation-settings: "SOFT" 40, "WONK" 0;
-  letter-spacing: -0.01em;
+  font-weight: 400;
+  letter-spacing: 0.005em;
+}
+
+.font-display {
+  font-weight: 400;
+  letter-spacing: 0.005em;
 }
 
 ::selection {

@@ -11,12 +11,12 @@ export const metadata: Metadata = {
 export default function Privacy() {
   return (
     <div className="mx-auto max-w-3xl px-6 py-16">
-      <h1 className="font-display text-4xl font-semibold text-ink">
+      <h1 className="font-display text-4xl text-ink">
         Privacy notice
       </h1>
       <p
         lang="cy"
-        className="mt-2 text-[0.75rem] font-semibold uppercase tracking-[0.2em] text-bracken"
+        className="mt-0.5 text-[0.75rem] font-semibold uppercase tracking-[0.2em] text-bracken"
       >
         Hysbysiad Preifatrwydd
       </p>
@@ -27,7 +27,7 @@ export default function Privacy() {
           analytics. There is exactly one way it collects personal data: the
           enquiry form on our Find Us page.
         </p>
-        <h2 className="pt-4 font-display text-2xl font-semibold text-ink">
+        <h2 className="pt-4 font-display text-2xl text-ink">
           The enquiry form
         </h2>
         <p>
@@ -43,7 +43,7 @@ export default function Privacy() {
           them; we never add you to a mailing list and never share your
           details with anyone else.
         </p>
-        <h2 className="pt-4 font-display text-2xl font-semibold text-ink">
+        <h2 className="pt-4 font-display text-2xl text-ink">
           Booking
         </h2>
         <p>
@@ -51,7 +51,7 @@ export default function Privacy() {
           their own websites, under their own privacy policies — no booking
           information passes through this site.
         </p>
-        <h2 className="pt-4 font-display text-2xl font-semibold text-ink">
+        <h2 className="pt-4 font-display text-2xl text-ink">
           Your rights & contact
         </h2>
         <p>

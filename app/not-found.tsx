@@ -6,12 +6,12 @@ export default function NotFound() {
       <p className="text-[0.85rem] font-semibold uppercase tracking-[0.18em] text-bracken">
         404
       </p>
-      <h1 className="mt-3 font-display text-4xl font-semibold text-ink sm:text-5xl">
+      <h1 className="mt-3 font-display text-4xl text-ink sm:text-5xl">
         Lost?
       </h1>
       <p
         lang="cy"
-        className="mt-2 text-[0.75rem] font-semibold uppercase tracking-[0.2em] text-bracken"
+        className="mt-0.5 text-[0.75rem] font-semibold uppercase tracking-[0.2em] text-bracken"
       >
         Ar goll?
       </p>

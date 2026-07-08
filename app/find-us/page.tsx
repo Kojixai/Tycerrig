@@ -87,12 +87,12 @@ export default function FindUs() {
             </p>
           </div>
           <div className="rounded-lg border border-ink/10 bg-wool-2 p-7">
-            <h3 className="font-display text-xl font-semibold text-ink">
+            <h3 className="font-display text-xl text-ink">
               Where we are
             </h3>
             <p
               lang="cy"
-              className="mt-1 text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-bracken"
+              className="mt-0.5 text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-bracken"
             >
               Ble rydym ni
             </p>

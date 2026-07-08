@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import "@fontsource-variable/fraunces";
+import "@fontsource/instrument-serif";
+import "@fontsource/instrument-serif/400-italic.css";
 import "@fontsource-variable/figtree";
 import "./globals.css";
 import Header from "@/components/Header";

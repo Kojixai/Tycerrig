@@ -9,12 +9,12 @@ import { formspreeEndpoint, site } from "@/lib/site";
 export default function EnquiryForm() {
   return (
     <div className="rounded-lg border border-ink/10 bg-wool-2 p-6 sm:p-8">
-      <h2 className="font-display text-2xl font-semibold text-ink">
+      <h2 className="font-display text-2xl text-ink">
         Send us a message
       </h2>
       <p
         lang="cy"
-        className="mt-1 text-[0.75rem] font-semibold uppercase tracking-[0.2em] text-bracken"
+        className="mt-0.5 text-[0.75rem] font-semibold uppercase tracking-[0.2em] text-bracken"
       >
         Anfonwch neges
       </p>

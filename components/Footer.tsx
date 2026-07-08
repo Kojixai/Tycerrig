@@ -12,7 +12,7 @@ export default function Footer() {
       </div>
       <div className="mx-auto grid max-w-6xl gap-8 px-6 py-10 sm:grid-cols-2">
         <div className="text-[0.9rem]">
-          <p lang="cy" className="font-display text-lg font-semibold">
+          <p lang="cy" className="font-display text-lg">
             Tŷ Cerrig
           </p>
           <address className="mt-2 not-italic leading-relaxed text-wool/75">
@@ -53,7 +53,7 @@ export default function Footer() {
               href={site.booking.pitchup}
               target="_blank"
               rel="noopener"
-              className="text-wool/75 hover:text-wool"
+              className="font-medium text-river hover:text-wool"
             >
               Tŷ Cerrig on Pitchup ↗
             </a>
@@ -62,7 +62,7 @@ export default function Footer() {
               href={site.booking.camc}
               target="_blank"
               rel="noopener"
-              className="text-wool/75 hover:text-wool"
+              className="font-medium text-river hover:text-wool"
             >
               Caravan &amp; Motorhome Club listing ↗
             </a>
@@ -74,14 +74,10 @@ export default function Footer() {
         </div>
       </div>
       <div className="border-t border-wool/10">
-        <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-2 px-6 py-3.5 text-[0.8rem] text-wool/50">
+        <div className="mx-auto max-w-6xl px-6 py-3.5 text-[0.8rem] text-wool/50">
           <p>
             <span lang="cy">Croeso i&rsquo;r fferm</span> — a working sheep farm in
             Eryri National Park
-          </p>
-          <p>
-            <span lang="cy">Gwefan gan</span> · Site by{" "}
-            <span className="text-wool/70">Blandfords</span>
           </p>
         </div>
       </div>

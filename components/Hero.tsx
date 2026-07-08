@@ -42,13 +42,13 @@ export default function Hero({
         className="absolute inset-0 bg-gradient-to-t from-ink/75 via-ink/25 to-transparent"
       />
       <div className="relative mx-auto w-full max-w-6xl px-6 pb-12 pt-40 sm:pb-16">
-        <h1 className="max-w-4xl font-display text-4xl font-semibold leading-[1.05] text-wool sm:text-6xl lg:text-7xl">
+        <h1 className="max-w-4xl font-display text-4xl leading-[1.05] text-wool sm:text-6xl lg:text-7xl">
           {title}
         </h1>
         {cy ? (
           <p
             lang="cy"
-            className="mt-3 text-[0.8rem] font-semibold uppercase tracking-[0.24em] text-wool/80 sm:text-[0.85rem]"
+            className="mt-0.5 text-[0.8rem] font-semibold uppercase tracking-[0.24em] text-wool/80 sm:text-[0.85rem]"
           >
             {cy}
           </p>

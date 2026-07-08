@@ -8,7 +8,7 @@ export type Walk = {
 export default function WalkCard({ walk }: { walk: Walk }) {
   return (
     <article className="border-t border-ink/15 py-8 first:border-t-0">
-      <h3 className="font-display text-xl font-semibold text-ink sm:text-2xl">
+      <h3 className="font-display text-xl text-ink sm:text-2xl">
         {walk.name}
         {walk.welshName ? (
           <span lang="cy" className="font-normal text-stone">

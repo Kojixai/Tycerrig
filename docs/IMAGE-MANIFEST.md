@@ -14,7 +14,7 @@ alt text in `lib/images.ts`, push.
 | `hero-jets` | Jets hero | RAF Tornado low-level, UK (#471052090) | A jet against the ridge shot from the pitch — the money shot; any long-lens Hawk/Typhoon works |
 | `hero-history` | History hero | Stone bridge & cottage, Yorkshire Dales (#349285871) | Drws-y-Nant platforms, the bridge stump near the gate, or Rhydymain chapel (analogue film suits the subject) |
 | `hero-findus` | Find Us hero | Green mountain panorama (#482551284) | The lane + A494 turning (doubles as UX content — shoot both approaches) |
-| `farm-sheep` | Home, distance strip | Sheep + stone farmhouse, autumn UK (#316386618) | The flock on the farm with the valley behind |
+| `farm-sheep` | reserved (not currently placed) | Sheep + stone farmhouse, autumn UK (#316386618) | The flock on the farm with the valley behind |
 | `farm-lamb` | Home, family intro | Lamb on farm track at dusk (#207952191) | Lamb feeding with the family / guests' kids |
 
 Also wanted from the visit (new slots, v2): barn interior — the famous

@@ -16,12 +16,12 @@ export default function BookingCTA({
       id={id}
       className="mx-auto max-w-3xl scroll-mt-28 px-6 py-14 text-center"
     >
-      <h2 className="font-display text-2xl font-semibold text-ink sm:text-3xl">
+      <h2 className="font-display text-2xl text-ink sm:text-3xl">
         Book your stay
       </h2>
       <p
         lang="cy"
-        className="mt-1.5 text-[0.75rem] font-semibold uppercase tracking-[0.2em] text-bracken"
+        className="mt-0.5 text-[0.75rem] font-semibold uppercase tracking-[0.2em] text-bracken"
       >
         Archebwch le
       </p>
