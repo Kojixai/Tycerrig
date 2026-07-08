@@ -13,30 +13,92 @@ export const metadata: Metadata = {
     "A quiet riverside caravan site on our family sheep farm between Dolgellau and Bala, in Eryri (Snowdonia) National Park. Caravan and Motorhome Club CL — five pitches beside the stream, dogs very welcome.",
 };
 
+function EssentialIcon({ d, extra }: { d: string; extra?: React.ReactNode }) {
+  return (
+    <svg
+      width="32"
+      height="32"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.8"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+    >
+      <path d={d} />
+      {extra}
+    </svg>
+  );
+}
+
 const essentials = [
   {
     title: "Five riverside pitches",
     body: "Electric hook-up, water tap, wifi and Sky/Freesat at every one.",
+    // caravan
+    icon: (
+      <EssentialIcon
+        d="M3 8a2 2 0 0 1 2-2h11a5 5 0 0 1 5 5v5h-2.5M3 8v8h4.5M3 8h7v4h11M11 16h5"
+        extra={<circle cx="9" cy="17" r="1.8" />}
+      />
+    ),
   },
   {
     title: "Dogs very welcome",
     body: "Walks start at your awning — leads near the sheep, please.",
+    // paw
+    icon: (
+      <EssentialIcon
+        d="M12 11.5c2.6 0 5 2.2 5 4.6 0 1.4-1 2.4-2.3 2.4-1 0-1.9-.5-2.7-.5s-1.7.5-2.7.5C8 18.5 7 17.5 7 16.1c0-2.4 2.4-4.6 5-4.6Z"
+        extra={
+          <>
+            <circle cx="5.5" cy="10" r="1.4" />
+            <circle cx="9.5" cy="6.5" r="1.4" />
+            <circle cx="14.5" cy="6.5" r="1.4" />
+            <circle cx="18.5" cy="10" r="1.4" />
+          </>
+        }
+      />
+    ),
   },
   {
     title: "The stone barn",
     body: "Hot shower, proper guest kitchen, laundry. Kept spotless.",
+    // barn/house
+    icon: (
+      <EssentialIcon d="M3 11l9-7 9 7M5 9.5V20h14V9.5M10 20v-6h4v6" />
+    ),
   },
   {
     title: "Club members only",
     body: "A Caravan & Motorhome Club CL. Caravans, motorhomes, campervans — no tents.",
+    // badge check
+    icon: (
+      <EssentialIcon
+        d="M8.5 12.5l2.5 2.5 4.5-5"
+        extra={<circle cx="12" cy="12" r="9" />}
+      />
+    ),
   },
   {
     title: "Seven miles to everything",
     body: "Dolgellau one way, Bala the other. Half a mile off the A494.",
+    // map pin
+    icon: (
+      <EssentialIcon
+        d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0Z"
+        extra={<circle cx="12" cy="10" r="3" />}
+      />
+    ),
   },
   {
     title: "Jets, some weekdays",
     body: "Mach Loop country — twenty minutes from the viewing spots.",
+    // jet from above
+    icon: (
+      <EssentialIcon d="M12 2.5v19M12 8l-8.5 6M12 8l8.5 6M12 17.5L8 21M12 17.5l4 3.5" />
+    ),
   },
 ];
 
@@ -91,16 +153,17 @@ export default function Home() {
 
       <section className="mx-auto max-w-4xl px-6 py-14">
         <SectionHeading en="The essentials" cy="Yr hanfodion" className="text-center" />
-        <ul className="mt-8 grid grid-cols-2 gap-4">
+        <ul className="mt-10 grid grid-cols-2 gap-x-6 gap-y-10 sm:grid-cols-3">
           {essentials.map((item) => (
             <li
               key={item.title}
-              className="rounded-lg border border-ink/10 bg-wool-2 px-5 py-4"
+              className="flex flex-col items-center text-center"
             >
-              <p className="font-display text-lg leading-tight text-ink">
+              <span className="text-moss">{item.icon}</span>
+              <p className="mt-3 font-display text-lg leading-tight text-ink">
                 {item.title}
               </p>
-              <p className="mt-1.5 text-[0.85rem] leading-snug text-ink/75">
+              <p className="mt-1.5 max-w-[26ch] text-[0.85rem] leading-snug text-ink/75">
                 {item.body}
               </p>
             </li>
