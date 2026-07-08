@@ -41,24 +41,10 @@ const essentials = [
 ];
 
 const teasers = [
-  {
-    href: "/caravan-site/",
-    cy: "Y Safle",
-    en: "The Site",
-    body: "Five riverside pitches, a spotless barn, and everything you actually need.",
-  },
-  {
-    href: "/walks/",
-    cy: "Teithiau Cerdded",
-    en: "Walks",
-    body: "From the farm gate to the top of Aran Fawddwy.",
-  },
-  {
-    href: "/jets/",
-    cy: "Uwchben y Cwm",
-    en: "Jets Over the Valley",
-    body: "Some weekdays, the RAF drops in low.",
-  },
+  { href: "/caravan-site/", cy: "Y Safle", en: "The Site" },
+  { href: "/walks/", cy: "Teithiau Cerdded", en: "Walks" },
+  { href: "/jets/", cy: "Uwchben y Cwm", en: "Jets Over the Valley" },
+  { href: "/history/", cy: "Hanes", en: "History" },
 ];
 
 export default function Home() {
@@ -120,27 +106,31 @@ export default function Home() {
 
       <BookingCTA inverted />
 
-      <section className="mx-auto max-w-6xl px-6 pb-16">
-        <div className="grid gap-6 md:grid-cols-3">
+      <section className="mx-auto max-w-4xl px-6 py-16">
+        <div className="grid grid-cols-2 gap-4">
           {teasers.map((t) => (
             <Link
               key={t.href}
               href={t.href}
-              className="group rounded-lg border border-ink/10 bg-wool-2 p-7 transition-colors hover:border-moss"
+              className="group flex items-center justify-between gap-3 rounded-lg border border-ink/10 bg-wool-2 px-5 py-4 transition-colors hover:border-moss hover:bg-wool"
             >
-              <h3 className="font-display text-xl text-ink">
-                {t.en}
+              <span>
+                <span className="block font-display text-lg leading-tight text-ink group-hover:text-moss">
+                  {t.en}
+                </span>
                 <span
                   lang="cy"
-                  className="mt-0.5 block text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-stone"
+                  className="mt-0.5 block text-[0.65rem] font-semibold uppercase tracking-[0.18em] text-stone"
                 >
                   {t.cy}
                 </span>
-              </h3>
-              <p className="mt-3 leading-relaxed text-ink/85">{t.body}</p>
-              <p aria-hidden="true" className="mt-4 font-semibold text-bracken transition-transform group-hover:translate-x-1">
+              </span>
+              <span
+                aria-hidden="true"
+                className="text-bracken transition-transform group-hover:translate-x-1"
+              >
                 →
-              </p>
+              </span>
             </Link>
           ))}
         </div>
