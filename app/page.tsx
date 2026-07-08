@@ -118,7 +118,7 @@ export default function Home() {
         </ul>
       </section>
 
-      <BookingCTA />
+      <BookingCTA inverted />
 
       <section className="mx-auto max-w-6xl px-6 pb-16">
         <div className="grid gap-6 md:grid-cols-3">
