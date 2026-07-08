@@ -12,11 +12,14 @@ export default function Privacy() {
   return (
     <div className="mx-auto max-w-3xl px-6 py-16">
       <h1 className="font-display text-4xl font-semibold text-ink">
-        <span lang="cy">Hysbysiad Preifatrwydd</span>
-        <span className="mt-1 block text-2xl font-normal text-stone">
-          Privacy notice
-        </span>
+        Privacy notice
       </h1>
+      <p
+        lang="cy"
+        className="mt-2 text-[0.75rem] font-semibold uppercase tracking-[0.2em] text-bracken"
+      >
+        Hysbysiad Preifatrwydd
+      </p>
       <div className="measure mt-8 space-y-5 leading-relaxed text-ink/85">
         <p>
           This website is an information site. It takes no bookings and no

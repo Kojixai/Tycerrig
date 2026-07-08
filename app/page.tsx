@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import Hero from "@/components/Hero";
+import SectionHeading from "@/components/SectionHeading";
 import TrustStrip from "@/components/TrustStrip";
 import BookingCTA from "@/components/BookingCTA";
 import CarthenDivider from "@/components/CarthenDivider";
@@ -38,7 +39,8 @@ export default function Home() {
     <>
       <Hero
         image={images.heroHome}
-        title="Croeso i Dŷ Cerrig"
+        title="Welcome to Tŷ Cerrig"
+        cy="Croeso i Dŷ Cerrig"
         subtitle="A quiet riverside caravan site on our family sheep farm, in the hills between Dolgellau and Bala."
         tall
       />
@@ -47,9 +49,7 @@ export default function Home() {
       <section className="mx-auto max-w-6xl px-6 py-16 sm:py-20">
         <div className="grid items-center gap-10 lg:grid-cols-[3fr_2fr]">
           <div className="measure">
-            <h2 className="font-display text-3xl font-semibold text-ink sm:text-4xl">
-              <span lang="cy">Fferm deuluol</span> · a family farm
-            </h2>
+            <SectionHeading en="A family farm" cy="Fferm deuluol" className="[&>h2]:sm:text-4xl" />
             <p className="mt-5 text-lg leading-relaxed text-ink/85">
               Tŷ Cerrig means &ldquo;house of stones,&rdquo; and the name suits
               the place — a working sheep farm that&rsquo;s been in our family
@@ -95,9 +95,12 @@ export default function Home() {
               className="group rounded-lg border border-ink/10 bg-wool-2 p-7 transition-colors hover:border-moss"
             >
               <h3 className="font-display text-xl font-semibold text-ink">
-                <span lang="cy">{t.cy}</span>
-                <span className="block text-[0.95rem] font-normal text-stone">
-                  {t.en}
+                {t.en}
+                <span
+                  lang="cy"
+                  className="mt-1 block text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-stone"
+                >
+                  {t.cy}
                 </span>
               </h3>
               <p className="mt-3 leading-relaxed text-ink/85">{t.body}</p>

@@ -7,8 +7,14 @@ export default function NotFound() {
         404
       </p>
       <h1 className="mt-3 font-display text-4xl font-semibold text-ink sm:text-5xl">
-        <span lang="cy">Ar goll?</span> · Lost?
+        Lost?
       </h1>
+      <p
+        lang="cy"
+        className="mt-2 text-[0.75rem] font-semibold uppercase tracking-[0.2em] text-bracken"
+      >
+        Ar goll?
+      </p>
       <p className="measure mx-auto mt-5 text-lg leading-relaxed text-ink/85">
         Happens to the best sat-navs around here. This page doesn&rsquo;t
         exist — but the farm does, and it&rsquo;s easy to find.

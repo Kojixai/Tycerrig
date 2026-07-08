@@ -64,7 +64,7 @@ export default function PitchMap() {
           <rect x="0" y="18" width="64" height="38" rx="2" fill="var(--color-stone)" />
           <path d="M-4 20 L32 -2 L68 20 Z" fill="var(--color-ink)" />
           <text x="32" y="76" textAnchor="middle" fontSize="15" fontWeight="600" fill="var(--color-ink)">
-            Y Beudy · the barn
+            The barn · Y Beudy
           </text>
           <text x="32" y="94" textAnchor="middle" fontSize="13" fill="var(--color-stone)">
             shower · toilet · kitchen · laundry

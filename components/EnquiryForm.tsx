@@ -10,8 +10,14 @@ export default function EnquiryForm() {
   return (
     <div className="rounded-lg border border-ink/10 bg-wool-2 p-6 sm:p-8">
       <h2 className="font-display text-2xl font-semibold text-ink">
-        <span lang="cy">Anfonwch neges</span> · Send us a message
+        Send us a message
       </h2>
+      <p
+        lang="cy"
+        className="mt-1 text-[0.75rem] font-semibold uppercase tracking-[0.2em] text-bracken"
+      >
+        Anfonwch neges
+      </p>
       <p className="mt-2 text-[0.95rem] text-stone">
         For anything that isn&rsquo;t a booking — booking lives with{" "}
         <a href={site.booking.pitchup} target="_blank" rel="noopener" className="text-moss underline underline-offset-2">

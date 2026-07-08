@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import SectionHeading from "@/components/SectionHeading";
 import Hero from "@/components/Hero";
 import BookingCTA from "@/components/BookingCTA";
 import CarthenDivider from "@/components/CarthenDivider";
@@ -16,8 +17,9 @@ export default function Jets() {
     <>
       <Hero
         image={images.heroJets}
-        title="Uwchben y Cwm"
-        subtitle="Jets Over the Valley — some weekdays, the quietest valley in Wales gets very loud for about eight seconds."
+        title="Jets Over the Valley"
+        cy="Uwchben y Cwm"
+        subtitle="Some weekdays, the quietest valley in Wales gets very loud for about eight seconds."
         position="72% 35%"
       />
       <Breadcrumbs name="Jets Over the Valley" path="/jets/" />
@@ -35,9 +37,11 @@ export default function Jets() {
             straight over the farm.
           </p>
 
-          <h2 className="mt-12 font-display text-3xl font-semibold text-ink">
-            <span lang="cy">Pryd maen nhw&rsquo;n hedfan</span> · when they fly
-          </h2>
+          <SectionHeading
+            en="When they fly"
+            cy="Pryd maen nhw'n hedfan"
+            className="mt-12"
+          />
           <p className="mt-5 text-lg leading-relaxed text-ink/85">
             Weekdays only — never weekends or bank holidays, and Fridays tend
             to be half days. Activity picks up from spring through autumn.
@@ -46,10 +50,11 @@ export default function Jets() {
             half the romance.
           </p>
 
-          <h2 className="mt-12 font-display text-3xl font-semibold text-ink">
-            <span lang="cy">Wedi dod am yr awyrennau?</span> · if you&rsquo;ve
-            come for the aircraft
-          </h2>
+          <SectionHeading
+            en="If you've come for the aircraft"
+            cy="Wedi dod am yr awyrennau?"
+            className="mt-12"
+          />
           <p className="mt-5 text-lg leading-relaxed text-ink/85">
             The famous viewing spots — the Bwlch on the A470, and Cad East and
             Cad West beneath Cadair Idris — are about twenty minutes&rsquo;

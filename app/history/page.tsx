@@ -22,8 +22,14 @@ function Section({
   return (
     <section className="border-t border-ink/15 py-10 first:border-t-0">
       <h2 className="font-display text-2xl font-semibold text-ink sm:text-3xl">
-        <span lang="cy">{cy}</span> · {en}
+        {en}
       </h2>
+      <p
+        lang="cy"
+        className="mt-1.5 text-[0.75rem] font-semibold uppercase tracking-[0.2em] text-bracken"
+      >
+        {cy}
+      </p>
       <div className="measure mt-4 space-y-4 text-lg leading-relaxed text-ink/85">
         {children}
       </div>
@@ -36,13 +42,14 @@ export default function History() {
     <>
       <Hero
         image={images.heroHistory}
-        title="Hanes Dan Eich Traed"
-        subtitle="History Beneath Your Feet — four thousand years in one small valley."
+        title="History Beneath Your Feet"
+        cy="Hanes Dan Eich Traed"
+        subtitle="Four thousand years in one small valley."
       />
       <Breadcrumbs name="History Beneath Your Feet" path="/history/" />
 
       <div className="mx-auto max-w-4xl px-6 py-12">
-        <Section cy="Yr hen bobl" en="the old ones">
+        <Section cy="Yr hen bobl" en="The old ones">
           <p>
             On the moorland skyline above this valley, Bronze Age farmers
             raised burial cairns some four thousand years ago — archaeologists
@@ -53,7 +60,7 @@ export default function History() {
           </p>
         </Section>
 
-        <Section cy="Y Rhufeiniaid" en="the Romans came this way">
+        <Section cy="Y Rhufeiniaid" en="The Romans came this way">
           <p>
             Three miles down the valley at Brithdir, the Romans built a small
             fort around AD 74, at a junction of roads linking their garrisons
@@ -64,7 +71,7 @@ export default function History() {
           </p>
         </Section>
 
-        <Section cy="Abatai, tywysogion ac aur" en="abbeys, princes and gold">
+        <Section cy="Abatai, tywysogion ac aur" en="Abbeys, princes and gold">
           <p>
             Cymer Abbey, founded by Cistercian monks in 1198, still stands in
             ruins beside the Mawddach fifteen minutes away — free to visit,
@@ -76,7 +83,7 @@ export default function History() {
           </p>
         </Section>
 
-        <Section cy="Y rheilffordd goll" en="the ghost railway">
+        <Section cy="Y rheilffordd goll" en="The ghost railway">
           <p>
             Between the farm and the road ran the old Great Western line from
             Ruabon to Barmouth — steam trains threading this valley for nearly

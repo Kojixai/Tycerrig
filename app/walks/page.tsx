@@ -61,8 +61,9 @@ export default function Walks() {
     <>
       <Hero
         image={images.heroWalks}
-        title="Teithiau Cerdded"
-        subtitle="Walks — from a riverside stroll to the roof of southern Eryri (Snowdonia)."
+        title="Walks"
+        cy="Teithiau Cerdded"
+        subtitle="From a riverside stroll to the roof of southern Eryri (Snowdonia)."
       />
       <Breadcrumbs name="Walks" path="/walks/" />
       <section className="mx-auto max-w-4xl px-6 py-14">

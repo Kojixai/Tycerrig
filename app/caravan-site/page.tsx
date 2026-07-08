@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import SectionHeading from "@/components/SectionHeading";
 import Hero from "@/components/Hero";
 import BookingCTA from "@/components/BookingCTA";
 import CarthenDivider from "@/components/CarthenDivider";
@@ -28,16 +29,15 @@ export default function CaravanSite() {
     <>
       <Hero
         image={images.heroSite}
-        title="Y Safle"
-        subtitle="The Site — five pitches, one stream, no crowds."
+        title="The Site"
+        cy="Y Safle"
+        subtitle="Five pitches, one stream, no crowds."
       />
       <Breadcrumbs name="The Site" path="/caravan-site/" />
 
       <section className="mx-auto max-w-6xl px-6 py-16">
         <div className="measure">
-          <h2 className="font-display text-3xl font-semibold text-ink">
-            <span lang="cy">Y llecynnau</span> · the pitches
-          </h2>
+          <SectionHeading en="The pitches" cy="Y llecynnau" />
           <p className="mt-5 text-lg leading-relaxed text-ink/85">
             We&rsquo;re a Certificated Location with the Caravan and Motorhome
             Club — five pitches only, for members, which is exactly why it
@@ -65,9 +65,7 @@ export default function CaravanSite() {
       <section className="mx-auto max-w-6xl px-6 py-16">
         <div className="grid gap-12 lg:grid-cols-2">
           <div className="measure">
-            <h2 className="font-display text-3xl font-semibold text-ink">
-              <span lang="cy">Y beudy</span> · the barn
-            </h2>
+            <SectionHeading en="The barn" cy="Y beudy" />
             <p className="mt-5 text-lg leading-relaxed text-ink/85">
               A short walk up the track is our converted stone barn: toilet,
               hot shower, washing machine and clothes line, and a proper guest
@@ -76,9 +74,7 @@ export default function CaravanSite() {
             </p>
           </div>
           <div className="measure">
-            <h2 className="font-display text-3xl font-semibold text-ink">
-              <span lang="cy">Cŵn</span> · dogs
-            </h2>
+            <SectionHeading en="Dogs" cy="Cŵn" />
             <p className="mt-5 text-lg leading-relaxed text-ink/85">
               Very welcome — this is a farm that loves dogs. Walks start at
               your awning: the farm track, the lanes, the riverbank. We only
@@ -90,9 +86,7 @@ export default function CaravanSite() {
 
       <section className="bg-wool-2 py-16">
         <div className="mx-auto max-w-6xl px-6">
-          <h2 className="font-display text-3xl font-semibold text-ink">
-            <span lang="cy">Da i wybod</span> · good to know
-          </h2>
+          <SectionHeading en="Good to know" cy="Da i wybod" />
           <ul className="mt-7 grid gap-x-10 gap-y-4 md:grid-cols-2">
             {goodToKnow.map((item) => (
               <li key={item} className="flex gap-3 leading-relaxed text-ink/85">

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import SectionHeading from "@/components/SectionHeading";
 import Hero from "@/components/Hero";
 import BookingCTA from "@/components/BookingCTA";
 import CarthenDivider from "@/components/CarthenDivider";
@@ -54,17 +55,16 @@ export default function FindUs() {
     <>
       <Hero
         image={images.heroFindUs}
-        title="Dod o Hyd i Ni"
-        subtitle="Finding us — easier than you think: half a mile off the A494."
+        title="Finding Us"
+        cy="Dod o Hyd i Ni"
+        subtitle="Easier than you think — half a mile off the A494."
       />
       <Breadcrumbs name="Find Us" path="/find-us/" />
 
       <section className="mx-auto max-w-6xl px-6 py-16">
         <div className="grid gap-12 lg:grid-cols-2">
           <div className="measure">
-            <h2 className="font-display text-3xl font-semibold text-ink">
-              <span lang="cy">Cyfarwyddiadau</span> · directions
-            </h2>
+            <SectionHeading en="Directions" cy="Cyfarwyddiadau" />
             <p className="mt-5 text-lg leading-relaxed text-ink/85">
               We&rsquo;re just off the A494 between Dolgellau and Bala — seven
               miles from each, so the last leg of your journey is a proper
@@ -88,8 +88,14 @@ export default function FindUs() {
           </div>
           <div className="rounded-lg border border-ink/10 bg-wool-2 p-7">
             <h3 className="font-display text-xl font-semibold text-ink">
-              <span lang="cy">Ble rydym ni</span> · where we are
+              Where we are
             </h3>
+            <p
+              lang="cy"
+              className="mt-1 text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-bracken"
+            >
+              Ble rydym ni
+            </p>
             <dl className="mt-4 space-y-3 text-[1.05rem]">
               <div>
                 <dt className="text-[0.8rem] font-semibold uppercase tracking-[0.15em] text-stone">
@@ -145,9 +151,7 @@ export default function FindUs() {
       <CarthenDivider />
 
       <section className="mx-auto max-w-4xl px-6 py-16">
-        <h2 className="font-display text-3xl font-semibold text-ink">
-          <span lang="cy">Cwestiynau</span> · questions we&rsquo;re often asked
-        </h2>
+        <SectionHeading en="Questions we're often asked" cy="Cwestiynau" />
         <div className="mt-8">
           <Faq items={faqs} />
         </div>

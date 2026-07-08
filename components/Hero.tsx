@@ -2,13 +2,13 @@ import type { ImageSlot } from "@/lib/images";
 import { srcSet } from "@/lib/images";
 
 /**
- * Full-bleed photographic hero: wool-cream Fraunces over a gentle bottom
- * gradient for legibility (brief A2). Welsh title leads; English subline.
+ * Full-bleed photographic hero: English title in wool-cream Fraunces over
+ * a gentle bottom gradient, Welsh beneath as a small-caps kicker.
  */
 export default function Hero({
   image,
   title,
-  titleLang = "cy",
+  cy,
   subtitle,
   tall = false,
   position,
@@ -16,7 +16,8 @@ export default function Hero({
 }: {
   image: ImageSlot;
   title: string;
-  titleLang?: "cy" | "en";
+  /** Welsh rendering of the title, shown as a small-caps line beneath. */
+  cy?: string;
   subtitle: string;
   tall?: boolean;
   /** CSS object-position, for images whose subject sits off-centre. */
@@ -41,12 +42,17 @@ export default function Hero({
         className="absolute inset-0 bg-gradient-to-t from-ink/75 via-ink/25 to-transparent"
       />
       <div className="relative mx-auto w-full max-w-6xl px-6 pb-12 pt-40 sm:pb-16">
-        <h1
-          lang={titleLang === "cy" ? "cy" : undefined}
-          className="max-w-4xl font-display text-4xl font-semibold leading-[1.05] text-wool sm:text-6xl lg:text-7xl"
-        >
+        <h1 className="max-w-4xl font-display text-4xl font-semibold leading-[1.05] text-wool sm:text-6xl lg:text-7xl">
           {title}
         </h1>
+        {cy ? (
+          <p
+            lang="cy"
+            className="mt-3 text-[0.8rem] font-semibold uppercase tracking-[0.24em] text-wool/80 sm:text-[0.85rem]"
+          >
+            {cy}
+          </p>
+        ) : null}
         <p className="mt-4 max-w-2xl text-lg leading-relaxed text-wool/90 sm:text-xl">
           {subtitle}
         </p>
