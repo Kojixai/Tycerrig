@@ -3,6 +3,7 @@ export type Walk = {
   welshName?: string;
   meta: string; // e.g. "10 minutes' drive · easy · very dog-friendly"
   body: string;
+  route?: { href: string; label: string };
 };
 
 export default function WalkCard({ walk }: { walk: Walk }) {
@@ -21,6 +22,16 @@ export default function WalkCard({ walk }: { walk: Walk }) {
         {walk.meta}
       </p>
       <p className="measure mt-3 leading-relaxed text-ink/85">{walk.body}</p>
+      {walk.route ? (
+        <a
+          href={walk.route.href}
+          target="_blank"
+          rel="noopener"
+          className="mt-3 inline-block font-semibold text-moss underline decoration-moss/40 underline-offset-4 hover:decoration-moss"
+        >
+          {walk.route.label} ↗
+        </a>
+      ) : null}
     </article>
   );
 }

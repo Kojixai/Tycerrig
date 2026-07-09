@@ -56,7 +56,10 @@ export default function History() {
             surveying these uplands recorded hundreds of ancient sites within a
             few miles of the farm, from cairns to mysterious circular
             enclosures. People have been keeping animals on these hills for a
-            very, very long time. We&rsquo;re just the latest.
+            very, very long time. We&rsquo;re just the latest — our own family
+            has worked this land for over two hundred years, tenants first,
+            then owners when we bought the farm from the Ministry of
+            Agriculture in 1962.
           </p>
         </Section>
 
@@ -80,6 +83,19 @@ export default function History() {
             wedding rings ever since. Dolgellau&rsquo;s 17th-century Quakers,
             fleeing persecution, helped found Pennsylvania: Bryn Mawr is named
             for a farm near here.
+          </p>
+        </Section>
+
+        <Section cy="Taith Mari Jones" en="A barefoot pilgrim">
+          <p>
+            In 1800, fifteen-year-old Mary Jones walked barefoot from
+            Llanfihangel-y-Pennant, at the foot of Cadair Idris, over the
+            hills to Bala — twenty-six miles — to buy a Bible from Thomas
+            Charles. Her determination helped inspire the founding of the
+            Bible Society four years later. Her route ran along our farm
+            road, and the waymarked Taith Mari Jones still passes our gate
+            today. You&rsquo;ll find her story on the walking page — and her
+            path under your boots.
           </p>
         </Section>
 

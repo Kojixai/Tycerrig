@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="280" height="330" viewBox="0 0 280 330">
+  <rect width="280" height="330" fill="#F5F1E8"/>
+  <!-- cairn: three stacked stones, bracken sun rising behind -->
+  <circle cx="185" cy="78" r="26" fill="#A85C32"/>
+  <rect x="88" y="128" width="104" height="34" rx="17" fill="#2E3134"/>
+  <rect x="100" y="96" width="80" height="30" rx="15" fill="#3E5C46"/>
+  <rect x="114" y="68" width="52" height="26" rx="13" fill="#6E7276"/>
+  <!-- ground line / river -->
+  <path d="M56 176 Q92 168 140 176 T224 176" fill="none" stroke="#7A94A3" stroke-width="5" stroke-linecap="round"/>
+  <text x="140" y="234" text-anchor="middle" font-family="Cormorant, Georgia, serif" font-size="46" font-weight="600" fill="#2E3134">Tŷ Cerrig</text>
+  <text x="140" y="264" text-anchor="middle" font-family="Figtree, system-ui, sans-serif" font-size="12" letter-spacing="4" fill="#6E7276">FFERM · FARM</text>
+  <text x="140" y="286" text-anchor="middle" font-family="Figtree, system-ui, sans-serif" font-size="12" letter-spacing="4" fill="#A85C32">RHYDYMAIN · ERYRI</text>
+</svg>

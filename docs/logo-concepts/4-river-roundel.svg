@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 300 300">
+  <rect width="300" height="300" fill="#F5F1E8"/>
+  <circle cx="150" cy="150" r="128" fill="none" stroke="#3E5C46" stroke-width="7"/>
+  <circle cx="150" cy="150" r="116" fill="none" stroke="#A85C32" stroke-width="2"/>
+  <!-- hill line -->
+  <path d="M62 138 Q104 92 150 118 Q196 88 238 132" fill="none" stroke="#3E5C46" stroke-width="6" stroke-linecap="round"/>
+  <!-- three stones -->
+  <circle cx="118" cy="160" r="13" fill="#6E7276"/>
+  <circle cx="150" cy="155" r="16" fill="#2E3134"/>
+  <circle cx="180" cy="161" r="11" fill="#A85C32"/>
+  <!-- the afon -->
+  <path d="M74 196 Q112 186 150 196 T226 196" fill="none" stroke="#7A94A3" stroke-width="6" stroke-linecap="round"/>
+  <text x="150" y="238" text-anchor="middle" font-family="Cormorant, Georgia, serif" font-size="34" font-weight="600" fill="#2E3134">Tŷ Cerrig</text>
+  <text x="150" y="70" text-anchor="middle" font-family="Figtree, system-ui, sans-serif" font-size="11" letter-spacing="4" fill="#6E7276">RHYDYMAIN · ERYRI</text>
+</svg>

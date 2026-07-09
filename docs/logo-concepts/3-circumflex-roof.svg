@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="180" viewBox="0 0 560 180">
+  <rect width="560" height="180" fill="#F5F1E8"/>
+  <!-- the ŷ circumflex as a roof sheltering three stones: "house of stones" -->
+  <path d="M42 86 L88 46 L134 86" fill="none" stroke="#3E5C46" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="62" cy="116" r="15" fill="#6E7276"/>
+  <circle cx="94" cy="112" r="18" fill="#2E3134"/>
+  <circle cx="122" cy="118" r="13" fill="#A85C32"/>
+  <text x="176" y="98" font-family="Cormorant, Georgia, serif" font-size="58" font-weight="600" fill="#2E3134">Tŷ Cerrig</text>
+  <text x="179" y="130" font-family="Figtree, system-ui, sans-serif" font-size="15" letter-spacing="5" fill="#6E7276">RHYDYMAIN · ERYRI</text>
+</svg>

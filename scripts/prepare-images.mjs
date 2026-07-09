@@ -16,7 +16,7 @@ const SRC = "image-src";
 const OUT = "public/images";
 mkdirSync(OUT, { recursive: true });
 
-const files = readdirSync(SRC).filter((f) => /\.(jpe?g|png)$/i.test(f));
+const files = readdirSync(SRC).filter((f) => /\.(jpe?g|png|webp)$/i.test(f));
 if (files.length === 0) {
   console.log(`No source images found in ${SRC}/`);
   process.exit(0);

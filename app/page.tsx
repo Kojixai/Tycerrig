@@ -107,9 +107,9 @@ export default function Home() {
             <SectionHeading en="A family farm" cy="Fferm deuluol" className="[&>h2]:sm:text-4xl" />
             <p className="mt-4 text-lg leading-relaxed text-ink/85">
               Tŷ Cerrig means &ldquo;house of stones&rdquo; — a working sheep
-              farm, three generations of us, tucked into the Wnion valley in
-              Eryri (Snowdonia) National Park. The loudest thing most evenings
-              is the river.
+              farm our family has worked for over two hundred years, tucked
+              into the Wnion valley in Eryri (Snowdonia) National Park. The
+              loudest thing most evenings is the river.
             </p>
             <p className="mt-4 font-display text-xl text-ink">
               — <span lang="cy">Rhys a&rsquo;r teulu</span>{" "}
@@ -117,12 +117,12 @@ export default function Home() {
             </p>
           </div>
           <img
-            src={`${images.farmLamb.base}-1200.webp`}
-            srcSet={srcSet(images.farmLamb)}
+            src={`${images.siteCamper.base}-1200.webp`}
+            srcSet={srcSet(images.siteCamper)}
             sizes="(min-width: 1024px) 50vw, 100vw"
-            alt={images.farmLamb.alt}
-            width={images.farmLamb.width}
-            height={images.farmLamb.height}
+            alt={images.siteCamper.alt}
+            width={images.siteCamper.width}
+            height={images.siteCamper.height}
             loading="lazy"
             className="max-h-72 w-full rounded-lg object-cover"
           />
@@ -155,12 +155,12 @@ export default function Home() {
 
       <section className="mx-auto max-w-4xl px-6 py-16">
         <SectionHeading en="Explore" cy="Crwydro" className="text-center" />
-        <div className="mt-10 grid grid-cols-2 gap-x-6 gap-y-10">
+        <div className="mt-8 grid grid-cols-2 gap-4">
           {teasers.map((t) => (
             <Link
               key={t.href}
               href={t.href}
-              className="group flex flex-col items-center text-center"
+              className="group flex flex-col items-center rounded-lg border border-ink/10 bg-wool-2 px-5 py-6 text-center shadow-sm transition-all hover:border-moss hover:shadow"
             >
               <span className="text-moss transition-colors group-hover:text-bracken">
                 {t.icon}

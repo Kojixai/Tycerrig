@@ -117,11 +117,21 @@ export default function FindUs() {
               </div>
               <div>
                 <dt className="text-[0.8rem] font-semibold uppercase tracking-[0.15em] text-stone">
+                  OS grid reference
+                </dt>
+                <dd className="mt-0.5 text-ink">{site.gridRef}</dd>
+              </div>
+              <div>
+                <dt className="text-[0.8rem] font-semibold uppercase tracking-[0.15em] text-stone">
                   Phone
                 </dt>
                 <dd className="mt-0.5">
                   <a href={site.phone.href} className="font-semibold text-moss hover:underline">
                     {site.phone.display}
+                  </a>
+                  <span className="text-stone"> · </span>
+                  <a href={site.landline.href} className="font-semibold text-moss hover:underline">
+                    {site.landline.display}
                   </a>
                 </dd>
               </div>
