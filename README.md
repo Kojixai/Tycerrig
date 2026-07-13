@@ -7,14 +7,14 @@ National Park.
 
 Built to be handed over and left alone: **no payments, no CMS, no prices,
 no dates, nothing that goes stale.** Booking happens on Pitchup and the
-Club via outbound links; the only external service is the Formspree
-enquiry form.
+Club via outbound links; contact is direct email/text/WhatsApp links —
+no external services at all.
 
 ## Stack
 
 - Next.js 15 (App Router), TypeScript, **static export** (`output: "export"`)
 - Tailwind CSS v4; palette and type tokens in `app/globals.css`
-- Fraunces + Figtree, self-hosted via `@fontsource-variable` (Welsh
+- Cormorant + Figtree, self-hosted via `@fontsource-variable` (Welsh
   diacritics ŷ/ŵ verified)
 - Structured data: `Campground` (layout), `FAQPage` (/find-us)
 

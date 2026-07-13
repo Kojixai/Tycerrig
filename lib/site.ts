@@ -42,16 +42,7 @@ export const site = {
     camc: "https://www.caravanclub.co.uk/certificated-locations/wales/gwynedd/dolgellau/ty-cerrig/",
   },
 
-  /**
-   * Enquiry form — Formspree.
-   * TODO (handover): create a free Formspree account owned by the family
-   * (info@tycerrig.com), create a form, and paste its ID here, e.g. "mqkrgyza".
-   * Until then the form is shown but submissions will not deliver.
-   */
-  formspreeId: "REPLACE_WITH_FORMSPREE_ID",
 } as const;
-
-export const formspreeEndpoint = `https://formspree.io/f/${site.formspreeId}`;
 
 export const nav = [
   { href: "/caravan-site/", cy: "Y Safle", en: "The Site" },

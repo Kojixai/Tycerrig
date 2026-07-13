@@ -20,14 +20,14 @@ requires updating — no prices, no news, no dates, no review counts.
 |---|---|---|
 | Domain registrar (tycerrig.com) | the address | Confirm ownership on the discovery call; point DNS at Vercel |
 | Vercel (free tier) | hosting | Create account with info@tycerrig.com, import the GitHub repo, add the domain. Builder stays as collaborator only |
-| Formspree (free tier) | enquiry form delivery | Create account with info@tycerrig.com, create a form, copy its ID into `lib/site.ts` (`formspreeId`) — one line — then redeploy |
 | GitHub | the code | Transfer the repository to a family-owned account, or keep builder-hosted with the family as admin |
 | Google Business Profile | the map listing | Claim/verify separately — highest-leverage marketing action of all (see brief) |
 
 ## The only file anyone should ever edit
 
-`lib/site.ts` — phone number, email, booking links, Formspree ID,
-what3words. Everything else can be left alone forever.
+`lib/site.ts` — phone number, email, booking links, what3words.
+Everything else can be left alone forever. (Contact on /find-us is
+direct email/text/WhatsApp links — no form service to maintain.)
 
 ## Swapping in real photography (after the site visit)
 
@@ -47,7 +47,7 @@ re-point the domain. Email the builder: Tom Hill, Blandfords
 ## Pre-launch checklist
 
 - [ ] Confirm tycerrig.com ownership (fallbacks: tycerrigcl.co.uk, tycerrig.cymru)
-- [ ] Formspree ID pasted into `lib/site.ts` and a test enquiry received at info@tycerrig.com
+- [ ] Test the Email / Text / WhatsApp contact buttons on /find-us from a phone
 - [ ] Rhys/family have reviewed every Welsh heading and all facts (see docs/TODO-FOR-RHYS.md)
 - [ ] Submit sitemap to Google Search Console
 - [ ] Google Business Profile claimed; website link added

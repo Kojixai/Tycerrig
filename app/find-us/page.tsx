@@ -4,7 +4,7 @@ import SectionHeading from "@/components/SectionHeading";
 import Hero from "@/components/Hero";
 import BookingCTA from "@/components/BookingCTA";
 import CarthenDivider from "@/components/CarthenDivider";
-import EnquiryForm from "@/components/EnquiryForm";
+import ContactButtons from "@/components/ContactButtons";
 import Faq, { type FaqItem } from "@/components/Faq";
 import { images } from "@/lib/images";
 import { site } from "@/lib/site";
@@ -172,7 +172,7 @@ export default function FindUs() {
       </section>
 
       <section className="mx-auto max-w-4xl px-6 pb-4">
-        <EnquiryForm />
+        <ContactButtons />
       </section>
 
       <BookingCTA />

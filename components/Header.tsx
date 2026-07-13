@@ -7,8 +7,9 @@ import { nav, site } from "@/lib/site";
 
 /**
  * Sticky header: wordmark left; phone icon, Book button and the menu
- * toggle right. The three carthen stripes double as the hamburger — the
- * menu drops down accordion-style beneath the bar.
+ * toggle right. On desktop (lg+) the nav sits inline in the bar; below
+ * that the three carthen stripes double as the hamburger and the menu
+ * drops down accordion-style beneath the bar.
  */
 export default function Header() {
   const [open, setOpen] = useState(false);
@@ -17,6 +18,17 @@ export default function Header() {
     <header className="sticky top-0 z-50 border-b border-ink/10 bg-wool/95 backdrop-blur">
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-3 sm:px-6">
         <Wordmark />
+        <nav aria-label="Main" className="hidden items-center gap-6 lg:flex">
+          {nav.map((item) => (
+            <Link
+              key={item.href}
+              href={item.href}
+              className="text-[0.95rem] font-medium text-ink transition-colors hover:text-moss"
+            >
+              {item.en}
+            </Link>
+          ))}
+        </nav>
         <div className="flex items-center gap-2.5 sm:gap-3">
           <a
             href={site.phone.href}
@@ -50,7 +62,7 @@ export default function Header() {
             aria-controls="site-menu"
             aria-label={open ? "Close menu" : "Open menu"}
             onClick={() => setOpen(!open)}
-            className="flex h-10 w-10 items-center justify-center rounded hover:bg-wool-2"
+            className="flex h-10 w-10 items-center justify-center rounded hover:bg-wool-2 lg:hidden"
           >
             {open ? (
               <svg
@@ -76,11 +88,11 @@ export default function Header() {
       </div>
       <div
         id="site-menu"
-        className={`grid transition-[grid-template-rows] duration-300 ease-out ${
+        className={`grid transition-[grid-template-rows] duration-300 ease-out lg:hidden ${
           open ? "grid-rows-[1fr] border-t border-ink/10" : "grid-rows-[0fr]"
         }`}
       >
-        <nav aria-label="Main" className="overflow-hidden">
+        <nav aria-label="Main menu" className="overflow-hidden">
           <ul className="mx-auto max-w-6xl px-4 sm:px-6">
             {nav.map((item) => (
               <li
