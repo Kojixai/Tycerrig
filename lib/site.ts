@@ -18,11 +18,7 @@ export const site = {
     display: "07733 338789",
     href: "tel:+447733338789",
   },
-  // Landline shown on the farm's own welcome board at the gate.
-  landline: {
-    display: "01341 450238",
-    href: "tel:+441341450238",
-  },
+  // The old landline (01341 450238) is no longer active — mobile only.
   email: "info@tycerrig.com",
 
   address: {

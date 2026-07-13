@@ -35,29 +35,29 @@ follow / to confirm" chip until answered. Nothing was invented.
 
 | # | Question | Where it goes |
 |---|---|---|
-| W1 | Exact Google Maps pin / plus code for the site entrance (not the postcode centroid) | /welcome/arrival |
-| W2 | what3words for the site entrance AND for the pitch area (emergency services) | /welcome/arrival + /welcome/emergencies 999 panel |
-| W3 | Turn-by-turn approach from the A494 (Rhydymain turning, bridges, bear left?) + any width/height cautions for larger outfits | /welcome/arrival |
+| ~~W1~~ | ~~Exact Google Maps pin~~ **DONE** — pin now uses the GPS coordinates from lib/site.ts | /welcome/arrival |
+| W2 | what3words for the site entrance AND for the pitch area (emergency services) → paste into `what3words` in lib/site.ts (footer, /find-us and /welcome pick it up automatically; pitch-area w3w still needs its own edit on arrival + emergencies) | /welcome/arrival + /welcome/emergencies 999 panel + /find-us |
+| ~~W3~~ | ~~A494 approach~~ **DONE** — off at the Rhydymain turning, over the first bridge, left over the second into the site | /welcome/arrival |
 | W4 | Check-in from / check-out by times; late-arrival procedure; on-arrival instructions (where to pull in, who to find, which pitch) | /welcome/arrival |
 | W5 | Hook-up amperage (e.g. 16A) | /welcome/your-pitch |
-| W6 | Drinking water: which tap is drinking water? (Creek water treated as NOT drinkable until confirmed) | /welcome/your-pitch + FAQ |
-| W7 | Washing machine price (£5?) and how to pay; other barn appliances (kettle, microwave, toaster, iron?) | /welcome/your-pitch |
+| ~~W6~~ | ~~Drinking water~~ **DONE** — pitch + barn taps are filtered creek water, drinkable, meets standards | /welcome/your-pitch (FAQ answer still open) |
+| ~~W7~~ | ~~Barn facilities~~ **DONE** — honesty box; washing machine £5, coffee machine £2, two ovens, microwave, dishwasher, fridge & freezer, crockery, shower & toilet, changing area, bins | /welcome/your-pitch |
 | W8 | Wi-Fi network name + password; TV location and how it works | /welcome/your-pitch |
 | W9 | Bins & recycling (where, what's separated, collection day) | /welcome/your-pitch + FAQ |
 | W10 | Chemical toilet disposal point location + rules ("no chemical waste in creek or drains" is already published); grey water | /welcome/your-pitch |
 | W11 | Quiet hours; dog rules; fires & BBQs (fire pits? off-ground only? firewood?); visitor policy | /welcome/your-pitch + FAQ |
 | W12 | Any on-site EV charging option? Can guests charge an e-bike? | /welcome/essentials + FAQ |
-| W13 | Mobile signal honest one-liner per network | /welcome/essentials |
+| W13 | Mobile signal honest one-liner per network (Ofcom checker linked in the meantime) | /welcome/essentials |
 | W14 | Top 3 pubs, top 3 takeaways, favourite café / Sunday roast / special-occasion meal | /welcome/food |
-| W15 | Nearest defibrillator (Rhydymain village hall?) | /welcome/emergencies |
-| W16 | Emergency contact: currently shows the mobile (07733 338789). When is it OK to knock on the farmhouse door? (Landline NOT shown — no longer active) | /welcome/emergencies |
+| W15 | Nearest defibrillator — could NOT be verified remotely (defib databases unreachable from the build sandbox; the one "Rhydymain" search hit was actually Rhydymwyn, Flintshire). Ask Rhys or check defibfinder.uk on site | /welcome/emergencies |
+| W16 | Emergency contact: currently shows the mobile (07733 338789). When is it OK to knock on the farmhouse door? | /welcome/emergencies |
 | W17 | Family favourites / anything on-farm guests can do or see | /welcome/things-to-do |
 | W18 | FAQ answers: drying wet gear; washing muddy dogs/boots; eggs/firewood/farm produce for sale; friends visiting | /welcome/faqs |
 | W19 | Welsh card kickers need native sign-off (with #9 above): Cyrraedd · Eich Llain a'r Ysgubor · Hanfodion Lleol · Bwyd a Thafarndai · Argyfwng ac Iechyd · Pethau i'w Gwneud · Ychydig o Gymraeg · Cwestiynau Cyffredin | /welcome hub + sub-pages |
 
-**Verify before go-live (research, not Rhys):** Dolgellau bakery/butcher names (Popty'r Dref?); current banks/post offices in Dolgellau & Bala; Barmouth vet practice name (Bodrwnsiwn?); preferred public Mach Loop viewpoint; Corris Craft Centre / King Arthur's Labyrinth / CAT Machynlleth currently open.
+**Verify before go-live (research, not Rhys):** Dolgellau bakery/butcher names (Popty'r Dref?); Barmouth vet practice name (Bodrwnsiwn?); preferred public Mach Loop viewpoint; Corris Craft Centre / King Arthur's Labyrinth / CAT Machynlleth currently open. *(Verified 2026-07: Rowlands Pharmacy Bala, Y Stryd Fawr LL23 7AG; Dolgellau Post Office, Plas yn Dre LL40 1AD; Bala Post Office, 50 Stryd Fawr LL23 7AB.)*
 
-**Note:** the inactive landline (01341 450238) is still shown on the public /find-us page and defined in `lib/site.ts` — remove in a follow-up.
+**Done:** the inactive landline (01341 450238) has been removed from /find-us and lib/site.ts.
 
 ## Deliberately never published (council "do-not-publish" list)
 

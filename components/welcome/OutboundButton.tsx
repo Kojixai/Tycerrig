@@ -14,7 +14,7 @@ export default function OutboundButton({
       href={href}
       target="_blank"
       rel="noopener"
-      className="inline-flex min-h-[2.5rem] items-center gap-1.5 rounded border border-moss/40 px-3.5 py-1.5 text-sm font-semibold text-moss transition-colors hover:bg-moss hover:text-wool"
+      className="inline-flex min-h-[2.5rem] items-center gap-1.5 rounded bg-moss px-4 py-2 text-sm font-semibold text-wool transition-colors hover:bg-moss-deep"
     >
       {children}
       <span aria-hidden="true">↗</span>

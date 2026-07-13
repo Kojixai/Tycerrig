@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 export default function ThingsToDo() {
   return (
     <WelcomeShell slug="things-to-do">
-      <div className="measure space-y-5 leading-relaxed text-ink/85">
+      <div className="space-y-5 leading-relaxed text-ink/85">
         <Link
           href="/walks/"
           className="group flex items-center gap-4 rounded-lg border border-moss/40 bg-wool-2 px-5 py-5 shadow-sm transition-all hover:border-moss hover:shadow"
@@ -33,7 +33,7 @@ export default function ThingsToDo() {
           </span>
         </Link>
 
-        <ul>
+        <ul className="grid gap-4 sm:grid-cols-2">
           <PlaceItem
             place={{
               name: "Coed y Brenin Forest Park",

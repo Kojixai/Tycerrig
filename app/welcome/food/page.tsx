@@ -47,38 +47,10 @@ export default function Food() {
           </li>
         </ul>
 
-        <h2 className="pt-4 font-display text-2xl text-ink">
-          Takeaways in Dolgellau
-        </h2>
-        <ul>
-          <PlaceItem
-            place={{
-              name: "Cosy Fish & Chips, Meyrick Street LL40 1LN",
-              map: {
-                href: "https://www.google.com/maps/search/?api=1&query=Cosy+Fish+and+Chips+Meyrick+Street+Dolgellau",
-              },
-            }}
-          />
-          <PlaceItem
-            place={{
-              name: "Dolgellau Kebabs, 2 Arran Road",
-              map: {
-                href: "https://www.google.com/maps/search/?api=1&query=Dolgellau+Kebabs+Arran+Road",
-              },
-            }}
-          />
-          <PlaceItem
-            place={{
-              name: "DD's Bakery & Sandwich Bar, Eldon Square",
-              note: "Daytime.",
-              map: {
-                href: "https://www.google.com/maps/search/?api=1&query=DDs+Bakery+Eldon+Square+Dolgellau",
-              },
-            }}
-          />
-        </ul>
         <p>
-          Bala also has around seven takeaways on and around Stryd Fawr.
+          Treat the picks as our shortlist, not the lot. Dolgellau has
+          takeaways of its own, and Bala has around seven on and around Stryd
+          Fawr — you won&rsquo;t go hungry either way.
         </p>
       </div>
     </WelcomeShell>

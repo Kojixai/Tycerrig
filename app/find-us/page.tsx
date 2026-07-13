@@ -121,6 +121,14 @@ export default function FindUs() {
                 </dt>
                 <dd className="mt-0.5 text-ink">{site.gridRef}</dd>
               </div>
+              {site.what3words ? (
+                <div>
+                  <dt className="text-[0.8rem] font-semibold uppercase tracking-[0.15em] text-stone">
+                    what3words
+                  </dt>
+                  <dd className="mt-0.5 text-ink">{site.what3words}</dd>
+                </div>
+              ) : null}
               <div>
                 <dt className="text-[0.8rem] font-semibold uppercase tracking-[0.15em] text-stone">
                   Phone
@@ -128,10 +136,6 @@ export default function FindUs() {
                 <dd className="mt-0.5">
                   <a href={site.phone.href} className="font-semibold text-moss hover:underline">
                     {site.phone.display}
-                  </a>
-                  <span className="text-stone"> · </span>
-                  <a href={site.landline.href} className="font-semibold text-moss hover:underline">
-                    {site.landline.display}
                   </a>
                 </dd>
               </div>

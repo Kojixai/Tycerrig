@@ -19,31 +19,30 @@ export default function YourPitch() {
             <Placeholder>Amperage to confirm</Placeholder>
           </li>
           <li>
-            Access to fresh running water from the creek{" "}
-            <Placeholder>
-              Drinking-water tap location to confirm — please don&rsquo;t
-              drink from the creek in the meantime
-            </Placeholder>
+            Fresh running drinking water — filtered directly from the creek,
+            through all the proper treatment, and meeting the required
+            standards. The taps in the Stone Barn are drinking water too.
           </li>
         </ul>
 
         <h2 className="pt-4 font-display text-2xl text-ink">
           The Stone Barn (shared facilities)
         </h2>
+        <p>
+          The barn runs on an honesty-box policy — just pop your money in the
+          tray.
+        </p>
         <ul className="space-y-3">
-          <li>
-            Washing machine — £5 per wash{" "}
-            <Placeholder>Price and how to pay to be confirmed</Placeholder>
-          </li>
+          <li>Washing machine — £5 per wash</li>
+          <li>Coffee machine — £2 per coffee</li>
           <li>Two ovens</li>
+          <li>Microwave</li>
           <li>Dishwasher</li>
           <li>Fridge &amp; freezer</li>
           <li>Plates, cutlery &amp; crockery</li>
-          <li>
-            <Placeholder>
-              Full list of smaller appliances to follow
-            </Placeholder>
-          </li>
+          <li>Shower &amp; toilet</li>
+          <li>Changing area</li>
+          <li>Bins</li>
         </ul>
 
         <h2 className="pt-4 font-display text-2xl text-ink">Wi-Fi &amp; TV</h2>
